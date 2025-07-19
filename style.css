@@ -1,0 +1,122 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+.sidebar-menu {
+    position: relative; 
+}
+.side-bar{
+    display:flex;
+    flex-direction: column;
+    position:absolute;
+    top: 0;
+    height:100vh;
+    width:22.5vh;
+    color:white;
+    align-items:center;
+    background-color: black;
+    transition: 0.3 ease-in-out;
+    left: -300px;
+
+
+}
+
+.sidebar-menu img{
+    width: 40px;
+    height: 40px;
+}
+
+.sidebar-menu:hover .side-bar{
+    left: 0;
+    z-index: -1;
+}
+
+
+.profile{
+    text-align: center;
+    font-size:16px;
+}
+.profile p{
+    margin-top: 10px;
+}
+
+.side-bar img{
+    width:60px;
+    height:auto;
+    margin-top:20%;
+}
+
+.list-items ul{
+    list-style: none;
+    text-align:left;
+}
+
+.side-bar .text{
+    position:absolute;
+    left:120%;
+    color:black;
+    width: 400px;
+    display:none;
+} 
+
+
+.list-items .list:hover .text{
+    display: block;
+}
+.list-items li{
+    padding:10px 90px 10px  8px;
+    font-size:16px;
+    text-decoration: none;
+    margin:30px;
+    cursor: pointer;
+}
+.list-items  li{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.list-items  li p{
+    margin-top:6px;
+}
+
+.list-items .item li img{
+    width:35px;
+    margin:0px 5px 0px 8px;
+    border-radius:50%;
+}
+
+
+.list-items ul li:hover{
+   background-color:blue;
+   display: block;
+   display: flex;
+}
+
+.list-items ul .list:hover .home{
+    margin-top:-228px;
+}
+
+.list-items ul .list:hover .about{
+    margin-top:-308px;
+}
+
+
+.list-items ul .list:hover .pages{
+    margin-top:-400px;
+}
+
+.list-items ul .list:hover .portfolio{
+    margin-top:-486px;
+}
+
+
+
+.log-out{
+    padding:10px 30px;
+    font-size:14px;
+    font-weight: 600;
+    margin-top:30%;
+}
+
